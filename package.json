@@ -1,0 +1,11 @@
+{
+  "name": "challenge-wknd",
+  "version": "1.0.0",
+  "description": "Este challenge en parejas consiste en maquetar en HTML y CSS (nada de JS) la web de [Panic](https://www.figma.com/file/2GVUw2kvmCTGtk80gopdtL/HTML_Challenge), a partir del figma proporcionado: versión mobile y versión desktop.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
