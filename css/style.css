@@ -1,13 +1,12 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 /* font-family: 'Oswald', sans-serif; */
 *,
 h2,
 p,
 img {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -87,45 +86,39 @@ div {
     padding: 0;
 }
 
-
 .header {
-  width: 100vh;
-  display: flex;
-  background-color: #15ffbc;
-  justify-content: space-between;
+    width: 100vh;
+    display: flex;
+    background-color: #15ffbc;
+    justify-content: space-between;
 }
 
 .top {
-  margin-top: 1.4rem;
-  margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    margin-left: 1.4rem;
 }
 
 .middle {
-  justify-content: center;
-  height: 250px;
+    justify-content: center;
+    height: 250px;
 }
 .middle__title {
-  font-family: "Oswald", sans-serif;
-  margin-left: 2.2rem;
-  margin-right: 3rem;
+    font-family: "Oswald", sans-serif;
+    margin-left: 2.2rem;
+    margin-right: 3rem;
 }
 
 .tag {
-  margin-top: 2.4rem;
-  margin-right: 8.6rem;
-  font-size: 1.4rem;
+    margin-top: 2.4rem;
+    margin-right: 8.6rem;
+    font-size: 1.4rem;
 }
 
 .img--pink {
-  width: 100vh;
+    width: 100vh;
 }
 
 .middle-container {
-  background-color: #15ffbc;
+    background-color: #15ffbc;
 }
-
-
-
-
-
 
