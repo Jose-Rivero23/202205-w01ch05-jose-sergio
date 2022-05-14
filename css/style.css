@@ -340,13 +340,13 @@ div {
         flex-direction: row;
     }
     .container-pizza__img-piza {
-        width: 150rem;
+        width: 120rem;
     }
     .container-dress__img-dress {
-        width: 150rem;
+        width: 120rem;
     }
     .container-girl__img-girl {
-        width: 150rem;
+        width: 120rem;
     }
     .container-pizza__lorem {
         font-size: 4rem;
