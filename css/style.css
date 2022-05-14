@@ -1,6 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 /* font-family: 'Oswald', sans-serif; */
+
 *,
 h2,
 p,
@@ -11,70 +11,69 @@ img {
 }
 
 body {
-   font-family: "Oswald", sans-serif;
-	 background-color: #15ffbc;
+    font-family: "Oswald", sans-serif;
+    background-color: #15ffbc;
 }
 
 .header {
-  height: 150px;
-  min-width: 100vh;
-  display: flex;
-  background-color: #15ffbc;
-  justify-content: space-between;
-  align-items: flex-start;
+    height: 150px;
+    min-width: 100vh;
+    display: flex;
+    background-color: #15ffbc;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .header__menu {
-  width: 2rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
+    width: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 .header__title {
-  margin-left: 4.6rem;
+    margin-left: 4.6rem;
 }
 .header__container {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .header__container__container--tag {
-  font-family: "Oswald", sans-serif;
-  margin-top: 1rem;
-  font-size: 1.2 rem;
+    font-family: "Oswald", sans-serif;
+    margin-top: 1rem;
+    font-size: 1.2 rem;
 }
 
 .img-car {
-  display: block;
-  background-position: center center;
-  background-size: cover;
+    display: block;
+    background-position: center center;
+    background-size: cover;
 }
 .img-car .img-car--pink {
-  max-width: 50rem;
+    max-width: 50rem;
 }
 
 .middle-container {
-  min-width: 100vh;
-  background-color: #15ffbc;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  margin-left: 2.5rem;
+    min-width: 100vh;
+    background-color: #15ffbc;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    margin-left: 2.5rem;
 }
 .middle-container__title {
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-  padding-top: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 8px;
+    padding-top: 2rem;
 }
 .middle-container__subtitle {
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-  padding-top: 5px;
+    font-size: 1.6rem;
+    letter-spacing: 8px;
+    padding-top: 5px;
 }
 .middle-container__lorem {
-  font-size: 1rem;
-  word-spacing: 1rem;
+    font-size: 1rem;
+    word-spacing: 1rem;
 }
-
 
 footer {
     margin: 0;
@@ -121,6 +120,7 @@ footer div {
 }
 
 .links--here {
+    text-decoration: line-through;
     color: #fe8cab;
 }
 
@@ -145,14 +145,17 @@ footer div {
     flex-direction: row;
     justify-content: center;
     min-width: 100vh;
-    padding-left: 8.5rem;
-    margin-bottom: 0%;
+    padding-left: 15rem;
+}
+footer img {
+    width: 36rem;
 }
 
-.social-media__icon {
-    max-width: 1rem;
-    max-height: 5rem;
+footer .social-media__icon {
+    max-width: 2rem;
+    max-height: 10rem;
 }
+
 .header {
     width: 100vh;
     display: flex;
@@ -208,4 +211,36 @@ footer p {
     margin-top: 2rem;
     line-height: 2rem;
 }
+@media (min-width: 600px) {
+    footer nav {
+        display: none;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .end-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .end-section div {
+        min-width: 0;
+        display: flex;
+    }
 
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .third-section p {
+        text-align: right;
+    }
+    .first-section p {
+        text-align: left;
+    }
+}
