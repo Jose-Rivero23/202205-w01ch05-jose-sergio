@@ -37,7 +37,8 @@ body {
 }
 .container-web {
     display: flex;
-    width: 100vh;
+    width: 100%;
+    white-space: nowrap;
     justify-content: space-around;
 }
 .container-web ul li {
@@ -56,6 +57,7 @@ body {
     object-fit: cover;
 }
 .video-car {
+    display: none;
 }
 
 .middle-container {
@@ -292,10 +294,67 @@ div {
     .container-web ul li {
         display: inline;
         padding: 3rem;
-        font-size: 1.8rem;
+        font-size: 6rem;
         font-family: "Oswald", sans-serif;
+        padding-bottom: 5rem;
+    }
+    .header__title {
+        width: 600px;
     }
     .video-car {
         display: initial;
+    }
+    .header__text {
+        display: none;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header {
+        justify-content: center;
+    }
+    .middle-container__title {
+        font-size: 6rem;
+    }
+    .middle-container__subtitle {
+        font-size: 4rem;
+    }
+    .middle-container__lorem {
+        font-size: 4rem;
+    }
+    .group-lorem__title {
+        font-size: 4rem;
+    }
+    .group-lorem__title--sub {
+        font-size: 3rem;
+    }
+    .middle-container__icon-x {
+        font-size: 5rem;
+    }
+    .middle-container__icon-wafe {
+        width: 5rem;
+    }
+    .picture-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .container-pizza__img-piza {
+        width: 150rem;
+    }
+    .container-dress__img-dress {
+        width: 150rem;
+    }
+    .container-girl__img-girl {
+        width: 150rem;
+    }
+    .container-pizza__lorem {
+        font-size: 4rem;
+    }
+    .container-dress__lorem {
+        font-size: 4rem;
+    }
+    .container-girl__lorem {
+        font-size: 4rem;
     }
 }
