@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 /* font-family: 'Oswald', sans-serif; */
+
 *,
 h2,
 p,
@@ -12,10 +13,15 @@ h1 {
 }
 
 body {
+<<<<<<< HEAD
+=======
+    font-family: "Oswald", sans-serif;
+>>>>>>> main
     background-color: #15ffbc;
 }
 
 .header {
+<<<<<<< HEAD
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -53,6 +59,40 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+=======
+    height: 150px;
+    min-width: 100vh;
+    display: flex;
+    background-color: #15ffbc;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header__menu {
+    width: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.header__title {
+    margin-left: 4.6rem;
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+.header__container__container--tag {
+    font-family: "Oswald", sans-serif;
+    margin-top: 1rem;
+    font-size: 1.2 rem;
+}
+
+.img-car {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+}
+.img-car .img-car--pink {
+    max-width: 50rem;
+>>>>>>> main
 }
 
 .middle-container {
@@ -63,6 +103,10 @@ body {
     justify-items: center;
     align-items: center;
     font-family: "Oswald", sans-serif;
+<<<<<<< HEAD
+=======
+    margin-left: 2.5rem;
+>>>>>>> main
 }
 .middle-container__title {
     font-size: 1.6rem;
@@ -77,6 +121,7 @@ body {
 .middle-container__lorem {
     font-size: 1rem;
     word-spacing: 1rem;
+<<<<<<< HEAD
     text-align: center;
     text-size-adjust: auto;
 }
@@ -143,6 +188,10 @@ body {
     width: 60rem;
 }
 
+=======
+}
+
+>>>>>>> main
 footer {
     margin: 0;
     min-width: 100vh;
@@ -187,6 +236,7 @@ div {
 }
 
 .links--here {
+    text-decoration: line-through;
     color: #fe8cab;
 }
 
@@ -212,11 +262,30 @@ div {
     justify-content: center;
     align-items: center;
     min-width: 100vh;
+<<<<<<< HEAD
 }
 
 .social-media__icon {
     margin: 0;
     padding: 0;
+=======
+    padding-left: 15rem;
+}
+footer img {
+    width: 36rem;
+}
+
+footer .social-media__icon {
+    max-width: 2rem;
+    max-height: 10rem;
+}
+
+.header {
+    width: 100vh;
+    display: flex;
+    background-color: #15ffbc;
+    justify-content: space-between;
+>>>>>>> main
 }
 
 .top {
@@ -254,7 +323,26 @@ div {
     font-family: "Oswald", sans-serif;
     padding: 3rem;
 }
+@media (min-width: 600px) {
+    footer nav {
+        display: none;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .end-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .end-section div {
+        min-width: 0;
+        display: flex;
+    }
 
+<<<<<<< HEAD
 .container-pizza__lorem {
     font-size: 2rem;
     font-weight: bold;
@@ -266,4 +354,19 @@ div {
     font-weight: bold;
     font-family: "Oswald", sans-serif;
     padding: 3rem;
+=======
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .third-section p {
+        text-align: right;
+    }
+    .first-section p {
+        text-align: left;
+    }
+>>>>>>> main
 }
