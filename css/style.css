@@ -4,50 +4,56 @@
 *,
 h2,
 p,
-img {
+div,
+img,
+h1 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Oswald", sans-serif;
     background-color: #15ffbc;
 }
 
 .header {
-    height: 150px;
-    min-width: 100vh;
     display: flex;
-    background-color: #15ffbc;
+    width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
 }
 .header__menu {
-    width: 2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    width: 3rem;
+    padding-left: 1rem;
 }
 .header__title {
-    margin-left: 4.6rem;
+    width: 200px;
 }
-.header__container {
-    display: flex;
-    flex-direction: row;
-}
-.header__container__container--tag {
+
+.header__text {
     font-family: "Oswald", sans-serif;
-    margin-top: 1rem;
-    font-size: 1.2 rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+.container-web {
+    display: flex;
+    justify-content: space-around;
+}
+.container-web ul li {
+    display: inline;
+    padding: 5rem;
+    font-size: 1.8rem;
+    font-family: "Oswald", sans-serif;
 }
 
 .img-car {
-    display: block;
-    background-position: center center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 .img-car .img-car--pink {
-    max-width: 50rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .middle-container {
@@ -58,7 +64,6 @@ body {
     justify-items: center;
     align-items: center;
     font-family: "Oswald", sans-serif;
-    margin-left: 2.5rem;
 }
 .middle-container__title {
     font-size: 1.6rem;
@@ -73,6 +78,70 @@ body {
 .middle-container__lorem {
     font-size: 1rem;
     word-spacing: 1rem;
+    text-align: center;
+    text-size-adjust: auto;
+}
+.middle-container__icon-x {
+    padding-top: 2rem;
+}
+.middle-container__icon-wafe {
+    padding-bottom: 2rem;
+}
+
+.group-lorem {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.group-lorem__title {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+.group-lorem__title--sub {
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+}
+
+.picture-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-girl {
+    display: block;
+    display: flex;
+    justify-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+.container-girl__img-girl {
+    width: 60rem;
+}
+
+.container-pizza {
+    display: block;
+    display: flex;
+    justify-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+.container-pizza__img-piza {
+    width: 60rem;
+}
+
+.container-dress {
+    display: block;
+    display: flex;
+    justify-items: center;
+    background-position: center center;
+    background-size: cover;
+}
+.container-dress__img-dress {
+    width: 60rem;
 }
 
 footer {
@@ -89,7 +158,6 @@ footer {
 .text--one {
     color: #15ffbc;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
 }
 
 .text--two {
@@ -112,7 +180,7 @@ div .title-footer {
     flex-direction: column;
 }
 
-footer div {
+div {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -144,23 +212,13 @@ footer div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     min-width: 100vh;
-    padding-left: 15rem;
-}
-footer img {
-    width: 36rem;
 }
 
-footer .social-media__icon {
-    max-width: 2rem;
-    max-height: 10rem;
-}
-
-.header {
-    width: 100vh;
-    display: flex;
-    background-color: #15ffbc;
-    justify-content: space-between;
+.social-media__icon {
+    margin: 0;
+    padding: 0;
 }
 
 .top {
@@ -192,24 +250,11 @@ footer .social-media__icon {
 .middle-container {
     background-color: #15ffbc;
 }
-
-.text-through {
-    text-decoration: line-through;
-    text-decoration-color: #fe8cab;
-}
-.third-section {
-    margin-bottom: 4rem;
-}
-.second-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer p {
-    letter-spacing: 10px;
-    text-align: center;
-    margin-top: 2rem;
-    line-height: 2rem;
+.container-girl__lorem {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    padding: 3rem;
 }
 @media (min-width: 600px) {
     footer nav {
@@ -230,17 +275,16 @@ footer p {
         display: flex;
     }
 
-    .social-media {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        min-width: 0;
+    .container-pizza__lorem {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Oswald", sans-serif;
+        padding: 3rem;
     }
-
-    .third-section p {
-        text-align: right;
-    }
-    .first-section p {
-        text-align: left;
+    .container-dress__lorem {
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Oswald", sans-serif;
+        padding: 3rem;
     }
 }
