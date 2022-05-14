@@ -3,20 +3,71 @@
 *,
 h2,
 p,
+div,
 img {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
-    font-family: "Oswald", sans-serif;
-}
-
-.header {
-    min-width: 100vh;
-    display: grid;
     background-color: #15ffbc;
+}
+.header {
+    height: 150px;
+    min-width: 100vh;
+    display: flex;
+    background-color: #15ffbc;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__menu {
+        width: 2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    &__title {
+        margin-left: 4.6rem;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        &__container--tag {
+            font-family: "Oswald", sans-serif;
+            margin-top: 1rem;
+            font-size: 1.2 rem;
+        }
+    }
+}
+.img-car {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    .img-car--pink {
+        max-width: 50rem;
+    }
+}
+.middle-container {
+    min-width: 100vh;
+    background-color: #15ffbc;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    margin-left: 2.5rem;
+    &__title {
+        font-size: 1.6rem;
+        letter-spacing: 8px;
+        padding-top: 2rem;
+    }
+    &__subtitle {
+        font-size: 1.6rem;
+        letter-spacing: 8px;
+        padding-top: 5px;
+    }
+    &__lorem {
+        font-size: 1rem;
+        word-spacing: 1rem;
+    }
 }
 
 footer {
@@ -121,4 +172,3 @@ div {
 .middle-container {
     background-color: #15ffbc;
 }
-
