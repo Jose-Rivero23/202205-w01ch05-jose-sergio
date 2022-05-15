@@ -13,7 +13,7 @@ body {
     background-color: #15ffbc;
 }
 .header {
-    height: 150px;
+    display: block;
     min-width: 100vh;
     display: flex;
     background-color: #15ffbc;
@@ -22,11 +22,8 @@ body {
     &__menu {
         width: 2rem;
         margin-top: 1rem;
-        margin-left: 1rem;
     }
-    &__title {
-        margin-left: 4.6rem;
-    }
+
     &__container {
         display: flex;
         flex-direction: row;
@@ -53,7 +50,6 @@ body {
     justify-items: center;
     align-items: center;
     font-family: "Oswald", sans-serif;
-    margin-left: 2.5rem;
     &__title {
         font-size: 1.6rem;
         letter-spacing: 8px;
@@ -67,9 +63,67 @@ body {
     &__lorem {
         font-size: 1rem;
         word-spacing: 1rem;
+        text-align: center;
+        text-size-adjust: auto;
+    }
+    &__icon-x {
+        padding-top: 2rem;
+    }
+    &__icon-wafe {
+        padding-bottom: 2rem;
     }
 }
 
+.group-lorem {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    &__title {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        font-weight: bold;
+    }
+    &__title--sub {
+        padding: 1rem;
+        letter-spacing: 0.5rem;
+        text-decoration: underline;
+    }
+}
+
+.picture-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__p {
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+}
+.container-girl {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    &__img-girl {
+        width: 60rem;
+    }
+}
+.container-pizza {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    &__img-piza {
+        width: 60rem;
+    }
+}
+.container-dress {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    &__img-dress {
+        width: 60rem;
+    }
+}
 footer {
     margin: 0;
     min-width: 100vh;
