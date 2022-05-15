@@ -27,7 +27,7 @@ body {
     padding-top: 1rem;
 }
 .header__title {
-    width: 200px;
+    justify-self: center;
 }
 
 .header__text {
@@ -49,19 +49,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    display: none;
 }
-.img-car .img-car--pink {
+.car-pink {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .video-car {
     display: none;
 }
 
 .middle-container {
-    min-width: 100vh;
     background-color: #15ffbc;
     display: flex;
     flex-direction: column;
@@ -248,7 +244,7 @@ div {
 }
 
 .img--pink {
-    width: 100vh;
+    width: 100vw;
 }
 
 .middle-container {
@@ -303,6 +299,9 @@ div {
     }
     .video-car {
         display: initial;
+        width: 100vw;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     .header__text {
         display: none;
@@ -340,13 +339,13 @@ div {
         flex-direction: row;
     }
     .container-pizza__img-piza {
-        width: 120rem;
+        width: calc(100vw / 3);
     }
     .container-dress__img-dress {
-        width: 120rem;
+        width: calc(100vw / 3);
     }
     .container-girl__img-girl {
-        width: 120rem;
+        width: calc(100vw / 3);
     }
     .container-pizza__lorem {
         font-size: 4rem;
@@ -356,5 +355,8 @@ div {
     }
     .container-girl__lorem {
         font-size: 4rem;
+    }
+    .car-pink {
+        display: none;
     }
 }
