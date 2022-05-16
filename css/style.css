@@ -49,10 +49,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-items: center;
+
 }
 .car-pink {
     width: 100%;
 }
+
 .video-car {
     display: none;
 }
@@ -146,7 +148,7 @@ body {
 
 footer {
     margin: 0;
-    min-width: 100vh;
+    min-width: 100vhs;
     background-color: black;
     color: white;
     display: flex;
@@ -214,11 +216,22 @@ div {
     justify-content: center;
     align-items: center;
     min-width: 100vh;
+    align-items: center;
+}
+footer img {
+    width: 36rem;
+}
+
+footer .social-media__icon {
+    max-width: 2rem;
+    max-height: 10rem;
+
 }
 
 .social-media__icon {
     margin: 0;
     padding: 0;
+
 }
 
 .top {
@@ -256,6 +269,45 @@ div {
     font-family: "Oswald", sans-serif;
     padding: 3rem;
 }
+.text-through {
+    text-decoration: line-through;
+    text-decoration-color: #fe8cab;
+}
+.third-section {
+    margin-bottom: 4rem;
+}
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2rem;
+
+}
+.imagen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vh;
+}
+div .imagen-container__picture {
+    min-width: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 25rem;
+}
+.imagen-container__picture img {
+    box-sizing: content-box;
+    min-width: 100vh;
+    min-height: 15rem;
+}
+
 @media (min-width: 600px) {
     footer nav {
         display: none;
@@ -269,6 +321,7 @@ div {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        min-width: 100hv;
     }
     .end-section div {
         min-width: 0;
@@ -359,4 +412,40 @@ div {
     .car-pink {
         display: none;
     }
+    .imagen-container {
+        display: flex;
+        flex-direction: row;
+
+        min-width: 100vh;
+    }
+    div .imagen-container__picture {
+        display: flex;
+        flex-direction: row;
+        min-width: 100vh;
+    }
+    .imagen-container__picture img {
+    }
+    .social-media {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+
+    .third-section p {
+        display: flex;
+        text-align: right;
+        align-self: flex-end;
+    }
+    .first-section p {
+        text-align: left;
+        display: flex;
+        align-self: flex-start;
+    }
+    .imagen-container__picture img {
+        box-sizing: content-box;
+        min-width: 100vh;
+        min-height: 15rem;
+
 }
